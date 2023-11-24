@@ -1,2 +1,2 @@
 # javascript-algorithms-data-structures
-Solutions for Coding Exercises in JavaScript Algorithms and Data Structures Masterclass by Colt Steele
+Course link: [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/)
