@@ -1,7 +1,13 @@
 function capitalizeFirst(arr) {
+    let answer = [];
 
-    // add whatever parameters you deem necessary - good luck!
+    function helper(input) {
+        if (input.length === 0) { return }
+        answer.push(input[0][0].toUpperCase() + input[0].slice(1));
+        helper(input.slice(1));
+    }
+
+    helper(arr);
+    return answer
 }
 
-// 
-console.log(capitalizeFirst(['car', 'taco', 'banana'])); // ['Car','Taco','Banana']
