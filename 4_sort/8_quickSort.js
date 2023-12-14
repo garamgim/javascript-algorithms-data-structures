@@ -13,7 +13,6 @@ function pivot(arr, startIdx = 0, endIdx = arr.length - 1) {
 function quickSort(arr, left = 0, right = arr.length - 1) {
     if (left < right) {
         let currPivot = pivot(arr, left, right);
-        console.log(currPivot);
         quickSort(arr, left, currPivot - 1);
         quickSort(arr, currPivot + 1, right);
     }
