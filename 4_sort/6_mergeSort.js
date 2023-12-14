@@ -1,3 +1,8 @@
+function mergeSort(arr) {
+    if (arr.length <= 1) return arr;
+    return mergeArray(mergeSort(arr.slice(0, arr.length / 2)), mergeSort(arr.slice(arr.length / 2)))
+}
+
 function mergeArray(arr1, arr2) {
     let result = [];
     let i = 0;
@@ -23,11 +28,6 @@ function mergeArray(arr1, arr2) {
     }
 
     return result
-}
-
-function mergeSort(arr) {
-    if (arr.length <= 1) return arr;
-    return mergeArray(mergeSort(arr.slice(0, arr.length / 2)), mergeSort(arr.slice(arr.length / 2)))
 }
 
 console.log(...mergeSort([1, 4, 8, 2, 7, 11, 5, 3]))
