@@ -1,5 +1,4 @@
 // This code is Colt's
-
 class Node {
     constructor(val) {
         this.val = val;

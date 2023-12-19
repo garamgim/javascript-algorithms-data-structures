@@ -12,19 +12,6 @@ class SinglyLinkedList {
         this.length = 0;
     }
 
-    push(val) {
-        let node = new Node(val);
-        if (this.length === 0) {
-            this.head = node;
-            this.tail = node;
-        } else {
-            this.tail.next = node;
-            this.tail = node;
-
-        }
-        this.length++;
-    }
-
     pop() {
         if (this.length === 0) {
             return undefined

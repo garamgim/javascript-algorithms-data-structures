@@ -14,13 +14,12 @@ class SinglyLinkedList {
 
     push(val) {
         let node = new Node(val);
-        if (this.length === 0) {
+        if (!this.head) {
             this.head = node;
             this.tail = node;
         } else {
             this.tail.next = node;
             this.tail = node;
-
         }
         this.length++;
     }
